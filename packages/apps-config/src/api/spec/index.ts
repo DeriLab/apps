@@ -10,6 +10,7 @@ import crust from './crust';
 import testPara from './cumulus-test-parachain';
 import darwinia from './darwinia';
 import darwiniaParachain from './darwinia-parachain';
+import deri from './deri';
 import dock from './dock';
 import dusty from './dusty';
 import encointerNodeNotee from './encointer-node-notee';
@@ -35,6 +36,7 @@ import zero from './zero';
 export default {
   Crab: crab,
   Darwinia: darwinia,
+  deri,
   Equilibrium: equilibrium,
   bifrost: bifrost,
   'bitcountry-node': bitcountry,
