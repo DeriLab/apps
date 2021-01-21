@@ -7,8 +7,8 @@
 set -e
 
 # the docker image name and dockerhub repo
-NAME="polkadot-js-apps"
-REPO="jacogr"
+NAME="deri-js-apps"
+REPO="DeriLab"
 
 # extract the current npm version from package.json
 VERSION=$(cat package.json \

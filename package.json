@@ -1,8 +1,8 @@
 {
-  "name": "polkadot-apps",
+  "name": "deri-apps",
   "repository": "https://github.com/DeriLab/apps",
   "main": "packages/apps-electron/build/electron.js",
-  "description": "An Apps portal into the Polkadot network",
+  "description": "An Apps portal into the Deri-Chain network",
   "author": "Jaco Greeff <jacogr@gmail.com>",
   "version": "0.76.2-10",
   "license": "Apache-2",

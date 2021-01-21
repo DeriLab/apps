@@ -11,7 +11,7 @@ import { FileStore } from '@polkadot/ui-keyring/stores';
 import { IpcMainHandler } from './ipc-main-handler';
 import { registerIpcHandler } from './register-ipc-handler';
 
-const ACCOUNTS_SUBFOLDER = 'polkadot-accounts';
+const ACCOUNTS_SUBFOLDER = 'deri-accounts';
 
 function safeWriteKey (key: string) {
   return key.replace(/:/g, '-');
