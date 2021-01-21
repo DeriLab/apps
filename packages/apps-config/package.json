@@ -3,7 +3,7 @@
   "version": "0.76.2-10",
   "main": "index.js",
   "sideEffects": true,
-  "repository": "github:polkadot-js/apps",
+  "repository": "github:DeriLab/apps",
   "author": "Jaco Greeff <jacogr@gmail.com>",
   "maintainers": [],
   "contributors": [],

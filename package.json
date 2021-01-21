@@ -1,6 +1,6 @@
 {
   "name": "polkadot-apps",
-  "repository": "https://github.com/polkadot-js/apps",
+  "repository": "https://github.com/DeriLab/apps",
   "main": "packages/apps-electron/build/electron.js",
   "description": "An Apps portal into the Polkadot network",
   "author": "Jaco Greeff <jacogr@gmail.com>",
@@ -56,6 +56,7 @@
     "lint:css": "stylelint './packages/**/src/**/*.tsx'",
     "postinstall": "polkadot-dev-yarn-only",
     "postinstall:electron": "electron-builder install-app-deps",
+    "deploy": "gh-pages -d packages/apps/build -m '[ci skip] Updates'",
     "test": "polkadot-dev-run-test --selectProjects=fast-tests --silent --testPathIgnorePatterns slow --testNamePattern='^((?!--SLOW--).)*$'",
     "test:all": "polkadot-dev-run-test --selectProjects=all-tests --silent",
     "test:one": "polkadot-dev-run-test",
@@ -86,6 +87,7 @@
     "electron": "^11.2.0",
     "electron-builder": "^22.10.4",
     "electron-builder-notarize": "^1.2.0",
+    "gh-pages": "~3.1.0",
     "i18next-scanner": "^3.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

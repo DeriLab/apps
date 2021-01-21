@@ -1,0 +1,8 @@
+
+SIMPLE USAGE:
+
+yarn install
+yarn build:www
+yarn deploy
+
+https://derilab.github.io/apps/?rpc=ws://127.0.0.1:9944

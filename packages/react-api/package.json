@@ -10,9 +10,9 @@
   "engines": {
     "node": ">=8.0"
   },
-  "repository": "github:polkadot-js/apps",
-  "bugs": "https://github.com/polkadot-js/apps/issues",
-  "homepage": "https://github.com/polkadot-js/apps/tree/master/packages/react-api#readme",
+  "repository": "github:DeriLab/apps",
+  "bugs": "https://github.com/DeriLab/apps/issues",
+  "homepage": "https://github.com/DeriLab/apps/tree/master/packages/react-api#readme",
   "dependencies": {
     "@babel/runtime": "^7.12.5",
     "@polkadot/api": "^3.5.2-3",
