@@ -7,7 +7,7 @@
 set -e
 
 # the docker image name and dockerhub repo
-NAME="deri-js-apps"
+NAME="deri-apps"
 REPO="DeriLab"
 
 # extract the current npm version from package.json

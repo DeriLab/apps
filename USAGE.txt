@@ -8,3 +8,11 @@ yarn deploy
 https://derilab.github.io/apps/?rpc=ws://127.0.0.1:9944
 
 yarn packElectron:mac
+yarn packElectron:win
+yarn packElectron:linux
+
+The accounts are stored in the following directories:
+* Mac: `~/Library/Application Support/deri-apps/deri-accounts`
+* Linux: `~/.config/deri-apps/deri-accounts` (or `$XDG_CONFIG_HOME/deri-apps/deri-accounts` if `$XDG_CONFIG_HOME` is defined)
+* Windows: `%APPDATA%\deri-apps\deri-accounts`
+

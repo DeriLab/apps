@@ -1,13 +1,13 @@
 ---
-productName: deri-js-apps
-artifactName: deri-jsp-apps-${version}.${ext}
+productName: deri-apps
+artifactName: deri-apps-${version}.${ext}
 files:
   - "./packages/apps-electron/build"
   - "./packages/apps-electron/assets"
   - "./packages/apps-electron/appleEntitlements"
 appId: com.github.DeriLab.apps
 mac:
-  artifactName: deri-js-apps-mac-${version}.${ext}
+  artifactName: deri-apps-mac-${version}.${ext}
   category: public.app-category.finance
   entitlements: "./packages/apps-electron/appleEntitlements/entitlements.mac.plist"
   hardenedRuntime: true
