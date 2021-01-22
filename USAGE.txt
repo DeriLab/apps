@@ -1,7 +1,7 @@
 
 SIMPLE USAGE:
 
-yarn install
+yarn
 yarn build:www
 yarn deploy
 
