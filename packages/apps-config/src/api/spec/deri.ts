@@ -6,6 +6,5 @@
 
 export default {
   Address: 'MultiAddress',
-  LookupSource: 'MultiAddress',
-  BlockLength: "u32"
+  LookupSource: 'MultiAddress'
 };
