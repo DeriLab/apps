@@ -10,6 +10,7 @@ const emptyColor = '#99999';
 // based on chain name
 // alphabetical
 const chainBitCountry = '#191a2e';
+const chainDeri = '#E723B6';
 const chainCrab = '#7C30DD';
 const chainCrust = '#ff8812';
 const chainDarwinia = 'linear-gradient(-45deg, #FE3876 0%, #7C30DD 71%, #3A30DD 100%)';
@@ -41,6 +42,7 @@ const nodeBitCountry = '#191a2e';
 const nodeBifrost = '#002cc3';
 const nodeCanvas = '#c77cff';
 const nodeCentrifuge = '#fcc367';
+const nodeDeriChain = '#E723B6';
 const nodeEdgeware = '#0a95df';
 const nodeEncointerNotee = '#cc0000';
 const nodeEncointerTeeproxy = '#0000cc';
@@ -68,6 +70,7 @@ export const chainColors: Record<string, any> = [
   ['crust maxwell cc2', chainCrust],
   ['darwinia cc1', chainDarwinia],
   ['Darwinia PC2', chainRoccoDarwinia],
+  ['Deri-Chain', chainDeri],
   ['hanonycash', chainHanonycash],
   ['Jupiter Testnet', chainJupiter],
   ['Kulupu', chainKulupu],
@@ -105,6 +108,9 @@ export const nodeColors: Record<string, any> = [
   ['Canvas Node', nodeCanvas],
   ['centrifuge chain', nodeCentrifuge],
   ['Centrifuge Chain Node', nodeCentrifuge],
+  ['Deri Chain ', nodeDeriChain],
+  ['Deri Node', nodeDeriChain],
+  ['Deri Chain Node', nodeDeriChain],
   ['edgeware node', nodeEdgeware],
   ['Encointer Node', nodeEncointerNotee],
   ['Encointer Node noTEE', nodeEncointerNotee],

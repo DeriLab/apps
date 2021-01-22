@@ -14,6 +14,8 @@
   "rpc.custom.own": "Custom",
   "rpc.darwinia": "Darwinia",
   "rpc.datahighway.harbour": "Harbour",
+  "rpc.deri-mainnet": "DeriChain Mainnet",
+  "rpc.deri-testnet": "DeriChain Testnet",
   "rpc.dock-mainnet": "Dock Mainnet",
   "rpc.dock-testnet": "Dock Testnet",
   "rpc.dusty": "Dusty",
