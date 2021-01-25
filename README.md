@@ -56,13 +56,13 @@ To get started -
 You can run a docker container via -
 
 ```
-docker run --rm -it --name deri-ui -e WS_URL=ws://someip:9944 -p 80:80 DeriLab/deri-apps:latest
+docker run --rm -it --name deri-ui -e WS_URL=ws://someip:9944 -p 80:80 derilab/deri-apps:latest
 ```
 
 To build a docker container containing local changes -
 
 ```
-docker build -t DeriLab/deri-apps .
+docker build -t derilab/deri-apps .
 ```
 
 When using these Docker commands, you can access the UI via http://localhost:80 (or just http://localhost)

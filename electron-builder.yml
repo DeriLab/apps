@@ -5,7 +5,7 @@ files:
   - "./packages/apps-electron/build"
   - "./packages/apps-electron/assets"
   - "./packages/apps-electron/appleEntitlements"
-appId: com.github.DeriLab.apps
+appId: com.github.derilab.apps
 mac:
   artifactName: deri-apps-mac-${version}.${ext}
   category: public.app-category.finance

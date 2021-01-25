@@ -61,6 +61,13 @@ export function createProduction (t: TFunction): LinkOption[] {
       }
     },
     {
+      info: 'deri-mainnet',
+      text: t('rpc.deri-mainnet', 'Deri-Chain', { ns: 'apps-config' }),
+      providers: {
+        'derilab': 'wss://api-mainnet.derilab.org'
+      }
+    },
+    {
       info: 'dock-mainnet',
       text: t('rpc.dock-mainnet', 'Dock', { ns: 'apps-config' }),
       providers: {

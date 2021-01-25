@@ -1,9 +1,9 @@
 {
   "name": "@polkadot/apps-routing",
   "private": true,
-  "version": "0.76.2-14",
+  "version": "0.76.2-29",
   "main": "index.js",
-  "repository": "github:DeriLab/apps",
+  "repository": "github:derilab/apps",
   "author": "Jaco Greeff <jacogr@gmail.com>",
   "maintainers": [],
   "contributors": [],

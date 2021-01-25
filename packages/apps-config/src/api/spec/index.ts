@@ -22,6 +22,7 @@ import jupiter from './jupiter';
 import kilt from './kilt';
 import nodle from './nodle';
 import phala from './phala';
+import phalaParachain from './phala-parachain';
 import plasm from './plasm';
 import plasmParachain from './plasm-parachain';
 import polkadex from './polkadex';
@@ -56,6 +57,7 @@ export default {
   'mashnet-node': kilt,
   'node-polkadex': polkadex,
   'nodle-chain': nodle,
+  'phala-collator': phalaParachain,
   'phala-node': phala,
   plasm,
   'plasm-parachain': plasmParachain,

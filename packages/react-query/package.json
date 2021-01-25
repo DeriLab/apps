@@ -1,13 +1,13 @@
 {
   "name": "@polkadot/react-query",
-  "version": "0.76.2-14",
+  "version": "0.76.2-29",
   "description": "A collection of RxJs React components the Polkadot JS API",
   "main": "index.js",
   "author": "Jaco Greeff <jacogr@gmail.com>",
   "maintainers": [],
   "contributors": [],
   "license": "Apache-2.0",
-  "repository": "github:DeriLab/apps",
+  "repository": "github:polkadot-js/apps",
   "bugs": "https://github.com/polkadot-js/apps/issues",
   "homepage": "https://github.com/polkadot-js/apps/tree/master/packages/react-query#readme",
   "dependencies": {

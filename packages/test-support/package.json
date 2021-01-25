@@ -1,8 +1,8 @@
 {
   "name": "@polkadot/test-support",
-  "version": "0.76.2-14",
+  "version": "0.76.2-29",
   "main": "index.js",
-  "repository": "github:DeriLab/apps",
+  "repository": "github:polkadot-js/apps",
   "author": "Jaco Greeff <jacogr@gmail.com>",
   "maintainers": [],
   "contributors": [],
