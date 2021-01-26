@@ -64,7 +64,7 @@ export function createTesting (t: TFunction): LinkOption[] {
     },
     {
       info: 'crust',
-      text: t('rpc.crust.network', 'Crust Maxwell CC2', { ns: 'apps-config' }),
+      text: t('rpc.crust.network', 'Crust Maxwell', { ns: 'apps-config' }),
       providers: {
         'Crust Network': 'wss://api.crust.network/'
       }
@@ -85,13 +85,6 @@ export function createTesting (t: TFunction): LinkOption[] {
       }
     },
     {
-      info: 'deri-testnet',
-      text: t('rpc.deri-testnet', 'Deri-Chain', { ns: 'apps-config' }),
-      providers: {
-        'derilab': 'wss://api-testnet.derilab.org'
-      }
-    },
-	  {
       info: 'dusty',
       text: t('rpc.dusty', 'Dusty', { ns: 'apps-config' }),
       providers: {

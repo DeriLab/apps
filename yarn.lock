@@ -1092,10 +1092,10 @@
   dependencies:
     prop-types "^15.7.2"
 
-"@interlay/polkabtc-types@^0.3.1":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@interlay/polkabtc-types/-/polkabtc-types-0.3.2.tgz#c443fe6850c68da6a6f830034a27cd728005d32f"
-  integrity sha512-ll4bovB6xAtIDCHs9CQjQ8Z198elc2qxey5U0BcImlw4sBC+XJYf+EMLqIBjBCo5yGoMEFS8sCgPXn4Yp6Fu8Q==
+"@interlay/polkabtc-types@^0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@interlay/polkabtc-types/-/polkabtc-types-0.3.4.tgz#256d1c75e62775469c0a7a05f3a847d8f84d53ed"
+  integrity sha512-WMvDwhdYo+Q835EnZYhdunNUkfjBa8+WfkPqU09059XEVbXQWiy19X5EFU10gOtLu1wtK26EC8Y8LljTfMYrJw==
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -1761,10 +1761,10 @@
     camelcase "^5.3.1"
     ip-regex "^4.3.0"
 
-"@polkadot/vanitygen@^0.25.2-3":
-  version "0.25.2-3"
-  resolved "https://registry.yarnpkg.com/@polkadot/vanitygen/-/vanitygen-0.25.2-3.tgz#2690e17ab520e3c9125427bc407428df7022035c"
-  integrity sha512-GMuM0rX6x3fLpfr5+xywSSvBCTluKTnPly1GVZ/5QN/YacpvFAX4TA+hTX/64JJukTQ228b+TnoIkPdKHyRXHQ==
+"@polkadot/vanitygen@^0.26.1":
+  version "0.26.2"
+  resolved "https://registry.yarnpkg.com/@polkadot/vanitygen/-/vanitygen-0.26.2.tgz#4e039f2777f49480b2f61812082bd6dca50bf626"
+  integrity sha512-p7kS2Y2CeUBIziossQgc2NseS014wFsKfTMu1g5lm/D1oxHGYtdjO19QtQd6FHqSfybG61T/snqDkWVyO+B8qg==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/register" "^7.12.10"
@@ -9465,10 +9465,10 @@ moment@^2.10.2:
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
 
-moonbeam-types-bundle@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/moonbeam-types-bundle/-/moonbeam-types-bundle-1.0.6.tgz#f19319eacc366bd5f601989612dae6f9d81c92b6"
-  integrity sha512-Gtrd9nDzoae0YUBggAhuht8qaolyMbyS+bOuaXHniwBQjN7e4lHIsx4xoTL+D63qSEWtv0GKhnvBttLF3nxyFQ==
+moonbeam-types-bundle@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/moonbeam-types-bundle/-/moonbeam-types-bundle-1.0.9.tgz#90fb29fdacf6997ca269117b0ef116c64ebe5549"
+  integrity sha512-z/vLHxCCSeGPi4ueGThD7EM4eRv1Zvbv8YP4qqSgyycf74GQflrImOB9SchkZxvMmS0RbxK97ePVCL2ojw+h+g==
   dependencies:
     "@polkadot/api" "^3.2.3"
     typescript "^4.1.3"
