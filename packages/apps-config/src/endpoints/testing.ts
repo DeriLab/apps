@@ -78,6 +78,13 @@ export function createTesting (t: TFunction): LinkOption[] {
       }
     },
     {
+      info: 'deri-testnet',
+      text: t('rpc.deri-testnet', 'Deri-Chain', { ns: 'apps-config' }),
+      providers: {
+        'derilab': 'wss://api-testnet.derilab.org'
+      }
+    },
+    {
       info: 'dock-testnet',
       text: t('rpc.dock-testnet', 'Dock', { ns: 'apps-config' }),
       providers: {

@@ -17,6 +17,7 @@
   "rpc.datahighway": "DataHighway",
   "rpc.datahighway.harbour": "Harbour",
   "rpc.deri-mainnet": "Deri-Chain",
+  "rpc.deri-testnet": "Deri-Chain",
   "rpc.dock-mainnet": "Dock",
   "rpc.dock-testnet": "Dock",
   "rpc.dusty": "Dusty",

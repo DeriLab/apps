@@ -30,6 +30,7 @@ import nodeCrab from './nodes/crab.svg';
 import nodeCrust from './nodes/crust.svg';
 import nodeDarwinia from './nodes/darwinia.png';
 import nodeDataHighway from './nodes/datahighway.png';
+import nodeDeriLab from './nodes/derilab.svg';
 import nodeDockMainnet from './nodes/dock-mainnet.png';
 import nodeDockTestnet from './nodes/dock-testnet.png';
 import nodeEdgeware from './nodes/edgeware-circle.svg';
@@ -70,6 +71,7 @@ export const chainLogos: Record<string, unknown> = [
   ['darwinia crab', nodeCrab],
   ['Darwinia PC2', nodeDarwinia],
   ['DataHighway', nodeDataHighway],
+  ['Deri-Chain', nodeDeriLab],
   ['Dusty', chainDusty],
   ['Galois', nodeMath],
   ['HydraDX Hydrate', chainHydrate],
@@ -113,6 +115,7 @@ export const nodeLogos: Record<string, unknown> = [
   ['darwinia', nodeDarwinia],
   ['darwinia parachain', nodeDarwinia],
   ['Darwinia Runtime Module Library', nodeDarwinia],
+  ['deri-node', nodeDeriLab],
   ['Dock Full Node', nodeDockMainnet],
   ['DataHighway', nodeDataHighway],
   ['DataHighway Node', nodeDataHighway],
@@ -170,6 +173,8 @@ export const namedLogos: Record<string, unknown> = {
   crust: nodeCrust,
   darwinia: nodeDarwinia,
   datahighway: nodeDataHighway,
+  'deri-mainnet': nodeDeriLab,
+  'deri-testnet': nodeDeriLab,
   'dock-mainnet': nodeDockMainnet,
   'dock-testnet': nodeDockTestnet,
   dusty: chainDusty,

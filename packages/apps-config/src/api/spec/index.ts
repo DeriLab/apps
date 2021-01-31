@@ -43,7 +43,6 @@ import zero from './zero';
 export default {
   Crab: crab,
   Darwinia: darwinia,
-  deri,
   Equilibrium: equilibrium,
   bifrost: bifrost,
   'bitcountry-node': bitcountry,
@@ -55,6 +54,7 @@ export default {
   'cumulus-test-parachain': testPara,
   'darwinia-parachain': darwiniaParachain,
   'datahighway-parachain': datahighwayParachain,
+  deri: deri,
   'dock-main-runtime': dock,
   'dock-testnet': dock,
   dusty3: dusty,
