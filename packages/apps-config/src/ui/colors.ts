@@ -10,7 +10,7 @@ const emptyColor = '#99999';
 // based on chain name
 // alphabetical
 const chainBitCountry = '#191a2e';
-const chainDeri = '#E723B6';
+const chainDeri = '#2b2b2b';
 const chainCrab = '#7C30DD';
 const chainCrust = '#ff8812';
 const chainChainx = '#F6C94A';
@@ -79,7 +79,7 @@ export const chainColors: Record<string, any> = [
   ['darwinia cc1', chainDarwinia],
   ['Darwinia PC2', chainRoccoDarwinia],
   ['DataHighway', chainRoccoDataHighway],
-  ['Deri-Chain', chainDeri],
+  ['Deri Chain', chainDeri],
   ['Encointer PC1', nodeEncointerNotee],
   ['hanonycash', chainHanonycash],
   ['HydraDX Hydrate', chainHydrate],
