@@ -95,7 +95,7 @@ export function createRococo (t: TFunction): EndpointOption {
       {
         info: 'rococoHydrate',
         paraId: 82406,
-        text: t('rpc.rococo.hydrate', 'Hydrate', { ns: 'apps-config' }),
+        text: t('rpc.rococo.hydrate', 'HydraDX Hydrate', { ns: 'apps-config' }),
         providers: {
           HydraDX: 'wss://hydrate-rpc.hydradx.io:9944'
         }
