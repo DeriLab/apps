@@ -3,11 +3,13 @@
 
 import type { AccountId, BountyIndex } from '@polkadot/types/interfaces';
 
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 
 import { Input, InputAddress, Modal, TxButton } from '@polkadot/react-components';
+import { useBlockTime } from '@polkadot/react-hooks';
 
 import { truncateTitle } from '../helpers';
+import { increaseDateByBlocks } from '../helpers/increaseDateByBlocks';
 import { useBounties } from '../hooks';
 import { useTranslation } from '../translate';
 
@@ -20,17 +22,20 @@ interface Props {
 
 function ExtendBountyExpiryAction ({ curatorId, description, index, toggleOpen }: Props): React.ReactElement<Props> | null {
   const { t } = useTranslation();
-  const { extendBountyExpiry } = useBounties();
+  const { bountyUpdatePeriod, extendBountyExpiry } = useBounties();
   const [remark, setRemark] = useState('');
+  const [blockTime, timeAsText] = useBlockTime(bountyUpdatePeriod);
 
   const onRemarkChange = useCallback((value: string) => {
     setRemark(value);
   }, []);
 
+  const expiryDate = useMemo(() => bountyUpdatePeriod && increaseDateByBlocks(bountyUpdatePeriod, blockTime), [bountyUpdatePeriod, blockTime]);
+
   return (
     <>
       <Modal
-        header={t<string>(`Extend Expiry of "${truncateTitle(description, 30)}"`)}
+        header={`${t<string>('extend expiry')} - "${truncateTitle(description, 30)}"`}
         size='large'
       >
         <Modal.Content>
@@ -52,12 +57,27 @@ function ExtendBountyExpiryAction ({ curatorId, description, index, toggleOpen }
               <p>{t<string>('Only curator can extend the bounty time.')}</p>
             </Modal.Column>
           </Modal.Columns>
+          {expiryDate &&
+            <Modal.Columns>
+              <Modal.Column>
+                <Input
+                  help={t<string>('The extended expiry date does not depend on the current expiry date.')}
+                  isDisabled
+                  label={t<string>('new expiry date and time')}
+                  value={`${expiryDate.toLocaleDateString()} ${expiryDate.toLocaleTimeString()}`}
+                />
+              </Modal.Column>
+              <Modal.Column>
+                <p>{t<string>(`Bounty expiry time will be set to ${timeAsText} from now.`)}</p>
+              </Modal.Column>
+            </Modal.Columns>
+          }
           <Modal.Columns>
             <Modal.Column>
               <Input
                 autoFocus
                 defaultValue={''}
-                help={t<string>('The note on the extension.')}
+                help={t<string>('The note linked to the extension call, explaining the reason behind it.')}
                 label={t<string>('bounty remark')}
                 onChange={onRemarkChange}
                 value={remark}

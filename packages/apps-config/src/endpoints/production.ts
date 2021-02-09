@@ -57,7 +57,8 @@ export function createProduction (t: TFunction): LinkOption[] {
       info: 'chainx',
       text: t('rpc.chainx', 'ChainX', { ns: 'apps-config' }),
       providers: {
-        ChainX: 'wss://mainnet.chainx.org/ws'
+        ChainX: 'wss://mainnet.chainx.org/ws',
+        'Patract Elara': 'wss://chainx.elara.patract.io'
       }
     },
     {
@@ -104,6 +105,14 @@ export function createProduction (t: TFunction): LinkOption[] {
       text: t('rpc.hanonycash', 'Hanonycash', { ns: 'apps-config' }),
       providers: {
         Hanonycash: 'wss://rpc.hanonycash.com'
+      }
+    },
+    {
+      info: 'snakenet',
+      text: t('rpc.hydra', 'HydraDX', { ns: 'apps-config' }),
+      providers: {
+        HydraDX: 'wss://rpc-01.snakenet.hydradx.io',
+        'Galactic Council': 'wss://rpc-02.snakenet.hydradx.io'
       }
     },
     {

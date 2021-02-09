@@ -53,16 +53,6 @@ function SlashCurator ({ action, curatorId, description, index, toggleOpen }: Pr
   const unassignCuratorProposal = useMemo(() => unassignCurator(index), [index, unassignCurator]);
 
   const actionProperties = useMemo<Record<ValidUnassignCuratorAction, ActionProperties>>(() => ({
-    GiveUp: {
-      filter: [curatorId.toString()],
-      header: t('This action will unassign you from a curator role.'),
-      helpMessage: t("The Curator account that will give up on it's role"),
-      params: [index],
-      proposingAccountTip: t('The account that will create the transaction.'),
-      tip: t('You are giving up your curator role, the bounty will return to the Funded state. You will get your deposit back.'),
-      title: t("Give up curator's role"),
-      tx: unassignCurator
-    },
     SlashCuratorAction: {
       filter: allAccounts,
       header: t('This action will Slash the Curator.'),
@@ -79,7 +69,7 @@ function SlashCurator ({ action, curatorId, description, index, toggleOpen }: Pr
       helpMessage: t('The Curator that will be slashed.'),
       params: [threshold, unassignCuratorProposal, unassignCuratorProposal?.length],
       proposingAccountTip: t('The council member that will create the motion, submission equates to an "aye" vote.'),
-      tip: t("If the motion is outvoted, Curator's deposit will be slashed and Curator will be unassigned. Bounty will return to the Funded state."),
+      tip: t("If the motion is approved, Curator's deposit will be slashed and Curator will be unassigned. Bounty will return to the Funded state."),
       title: t('Slash curator'),
       tx: api.tx.council.propose
     },
@@ -89,11 +79,11 @@ function SlashCurator ({ action, curatorId, description, index, toggleOpen }: Pr
       helpMessage: t('The Curator that will be unassigned'),
       params: [threshold, unassignCuratorProposal, unassignCuratorProposal?.length],
       proposingAccountTip: t('The council member that will create the motion, submission equates to an "aye" vote.'),
-      tip: t('If the motion is outvoted, the current Curator will be unassigned and the Bounty will return to the Funded state.'),
+      tip: t('If the motion is approved, the current Curator will be unassigned and the Bounty will return to the Funded state.'),
       title: t('Unassign curator'),
       tx: api.tx.council.propose
     }
-  }), [t, curatorId, index, unassignCurator, api.tx.council.propose, allAccounts, members, threshold, unassignCuratorProposal]);
+  }), [t, index, unassignCurator, api.tx.council.propose, allAccounts, members, threshold, unassignCuratorProposal]);
 
   const { filter, header, helpMessage, params, proposingAccountTip, tip, title, tx } = actionProperties[action];
 
@@ -128,7 +118,6 @@ function SlashCurator ({ action, curatorId, description, index, toggleOpen }: Pr
               help={helpMessage}
               isDisabled
               label={t<string>('current curator')}
-              type='account'
               withLabel
             />
           </Modal.Column>

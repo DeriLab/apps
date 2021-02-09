@@ -69,6 +69,14 @@ export function createRococo (t: TFunction): EndpointOption {
         }
       },
       {
+        info: 'rococoClover',
+        paraId: 229,
+        text: t('rpc.rococo.clover', 'Clover PC1', { ns: 'apps-config' }),
+        providers: {
+          Clover: 'wss://api-rococo.clover.finance'
+        }
+      },
+      {
         info: 'rococoCrust',
         paraId: 7777,
         text: t('rpc.rococo.crust', 'Crust PC1', { ns: 'apps-config' }),
@@ -103,9 +111,17 @@ export function createRococo (t: TFunction): EndpointOption {
       {
         info: 'rococoHydrate',
         paraId: 82406,
-        text: t('rpc.rococo.hydrate', 'HydraDX Hydrate', { ns: 'apps-config' }),
+        text: t('rpc.rococo.hydrate', 'Hydrate', { ns: 'apps-config' }),
         providers: {
           HydraDX: 'wss://hydrate-rpc.hydradx.io:9944'
+        }
+      },
+      {
+        info: 'rococoIdavoll',
+        paraId: 7766,
+        text: t('rpc.rococo.idavoll', 'Idavoll', { ns: 'apps-config' }),
+        providers: {
+          Idavoll: 'wss://rococo.idavoll.network'
         }
       },
       {
@@ -119,7 +135,7 @@ export function createRococo (t: TFunction): EndpointOption {
       {
         info: 'rococoPolkabtc',
         paraId: 21,
-        text: t('rpc.rococo.polkabtc', 'PolkaBTC', { ns: 'apps-config' }),
+        text: t('rpc.rococo.polkabtc', 'PolkaBTC PC1', { ns: 'apps-config' }),
         providers: {
           Interlay: 'wss://rococo.polkabtc.io/api/parachain'
         }
@@ -170,6 +186,22 @@ export function createRococo (t: TFunction): EndpointOption {
         text: t('rpc.rococo.zenlink', 'Zenlink PC1', { ns: 'apps-config' }),
         providers: {
           Zenlink: 'wss://rococo-parachain.zenlink.pro'
+        }
+      },
+      {
+        info: 'rococoSubDAO',
+        paraId: 888,
+        text: t('rpc.rococo.subdao', 'SubDAO PC1', { ns: 'apps-config' }),
+        providers: {
+          SubDAONetwork: 'wss://parachain.subdao.network'
+        }
+      },
+      {
+        info: 'rococoTrustBase',
+        paraId: 6633,
+        text: t('rpc.rococo.trustbase', 'TrustBase PC1', { ns: 'apps-config' }),
+        providers: {
+          TrustBase: 'wss://rococo.trustednodes.net'
         }
       }
     ]
