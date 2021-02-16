@@ -16,6 +16,7 @@ const chainCrust = '#ff8812';
 const chainClover = 'linear-gradient(to right, #52ad75, #7cc773)';
 const chainChainx = '#F6C94A';
 const chainDarwinia = 'linear-gradient(-45deg, #FE3876 0%, #7C30DD 71%, #3A30DD 100%)';
+const chainDotMog = '#020609';
 const chainHanonycash = '#0099CC';
 const chainHydrate = '#000000';
 const chainIntegritee = '#080808';
@@ -55,11 +56,13 @@ const nodeBifrost = '#002cc3';
 const nodeCanvas = '#c77cff';
 const nodeCentrifuge = '#fcc367';
 const nodeDeriChain = '#E723B6';
+const nodeDotMog = '#020609';
 const nodeEdgeware = '#0a95df';
 const nodeEncointerNotee = '#cc0000';
 const nodeEncointerTeeproxy = '#0000cc';
 const nodeEquilibrium = '#1792ff';
 const nodeJupiter = '#7143ff';
+const nodeLitentry = 'linear-gradient(45deg, #5cc27c 0%, #6de98f 100%)';
 const nodeMoonbeam = '#53cbc9';
 const nodeNodle = '#1ab394';
 const nodePolkadex = '#7C30DD';
@@ -90,6 +93,7 @@ export const chainColors: Record<string, any> = [
   ['Darwinia PC2', chainRoccoDarwinia],
   ['DataHighway', chainRoccoDataHighway],
   ['Deri Chain', chainDeri],
+  ['DOTMog.com NET', chainDotMog],
   ['Encointer PC1', nodeEncointerNotee],
   ['Galois', chainGalois],
   ['hanonycash', chainHanonycash],
@@ -107,6 +111,8 @@ export const chainColors: Record<string, any> = [
   ['Kusama', chainKusama],
   ['laminar turbulence pc1', chainRococoLaminar],
   ['Moonbase Alpha', nodeMoonbeam],
+  ['Moonbase Stage', nodeMoonbeam],
+  ['Moonbase Development Testnet', nodeMoonbeam],
   ['Phala PC1', chainPhala],
   ['Phala poc 3', chainPhala],
   ['Plasm', chainPlasm],
@@ -140,12 +146,14 @@ export const nodeColors: Record<string, any> = [
   ['centrifuge chain', nodeCentrifuge],
   ['Centrifuge Chain Node', nodeCentrifuge],
   ['deri-node ', nodeDeriChain],
+  ['DOTMog Node', nodeDotMog],
   ['edgeware node', nodeEdgeware],
   ['Encointer Node', nodeEncointerNotee],
   ['Encointer Node noTEE', nodeEncointerNotee],
   ['Encointer Node TEE proxy', nodeEncointerTeeproxy],
   ['Equilibrium node', nodeEquilibrium],
   ['Jupiter Node', nodeJupiter],
+  ['Litentry Parachain Collator', nodeLitentry],
   ['nodle chain node', nodeNodle],
   ['Polkadex Node', nodePolkadex],
   ['SORA-staging Node', nodeSora],

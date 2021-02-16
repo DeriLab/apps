@@ -36,6 +36,7 @@ import nodeDataHighway from './nodes/datahighway.png';
 import nodeDeriLab from './nodes/derilab.svg';
 import nodeDockMainnet from './nodes/dock-mainnet.png';
 import nodeDockTestnet from './nodes/dock-testnet.png';
+import nodeDotMog from './nodes/dotmog.svg';
 import nodeEdgeware from './nodes/edgeware-circle.svg';
 import nodeEncointerNotee from './nodes/encointer-notee.svg';
 import nodeEncointerTeeproxy from './nodes/encointer-teeproxy.svg';
@@ -47,6 +48,7 @@ import nodeJupiter from './nodes/jupiter.svg';
 import nodeKilt from './nodes/kilt.svg';
 import nodeKulupu from './nodes/kulupu.svg';
 import nodeLaminar from './nodes/laminar-circle.svg';
+import nodeLitentry from './nodes/litentry.png';
 import nodeMath from './nodes/math.svg';
 import moonbeam from './nodes/moonbeam.png';
 import nodeNodle from './nodes/nodle.svg';
@@ -94,6 +96,8 @@ export const chainLogos: Record<string, unknown> = [
   ['Kusama CC2', chainKusama],
   ['Kusama CC3', chainKusama],
   ['Moonbase Alpha', moonbeam],
+  ['Moonbase Stage', moonbeam],
+  ['Moonbase Development Testnet', moonbeam],
   ['PolkaBTC', nodePolkaBTC],
   ['Polkadex Testnet', nodePolkadex],
   ['Phala PC1', nodePhala],
@@ -120,6 +124,7 @@ export const nodeLogos: Record<string, unknown> = [
   ['Bifrost', nodeBifrost],
   ['BitCountry Node', nodeBitCountry],
   ['Bit.Country', nodeBitCountry],
+  ['Bit Country Tewai Parachain Collator', nodeBitCountry],
   ['Canvas Node', nodeCanvas],
   ['centrifuge chain', nodeCentrifuge],
   ['Centrifuge Chain Node', nodeCentrifuge],
@@ -131,6 +136,7 @@ export const nodeLogos: Record<string, unknown> = [
   ['Darwinia Runtime Module Library', nodeDarwinia],
   ['deri-node', nodeDeriLab],
   ['Dock Full Node', nodeDockMainnet],
+  ['DOTMog Node', nodeDotMog],
   ['DataHighway', nodeDataHighway],
   ['DataHighway Node', nodeDataHighway],
   ['DataHighway Parachain Collator', nodeDataHighway],
@@ -146,6 +152,7 @@ export const nodeLogos: Record<string, unknown> = [
   ['KILT Collator', nodeKilt],
   ['kulupu', nodeKulupu],
   ['Laminar Node', nodeLaminar],
+  ['Litentry Parachain Collator', nodeLitentry],
   ['node-template', nodeSubstrate],
   ['Nodle Chain Node', nodeNodle],
   ['Polkadex Node', nodePolkadex],
@@ -197,6 +204,7 @@ export const namedLogos: Record<string, unknown> = {
   'deri-testnet': nodeDeriLab,
   'dock-mainnet': nodeDockMainnet,
   'dock-testnet': nodeDockTestnet,
+  dotmog: nodeDotMog,
   dusty: chainDusty,
   edgeware: nodeEdgeware,
   empty: emptyLogo,
@@ -222,15 +230,18 @@ export const namedLogos: Record<string, unknown> = {
   rococoAcala: nodeAcala,
   rococoAres: nodeAres,
   rococoBifrost: nodeBifrost,
+  rococoBitCountry: nodeBitCountry,
   rococoClover: nodeClover,
   rococoCrust: nodeCrust,
   rococoDarwinia: nodeDarwinia,
   rococoDataHighway: nodeDataHighway,
   rococoEncointer: nodeEncointerNotee,
   rococoHydrate: chainHydrate,
+  rococoIdavoll: nodeIdavoll,
   rococoIntegritee: nodeIntegritee,
   rococoKilt: nodeKilt,
   rococoLaminar: nodeLaminar,
+  rococoLitentry: nodeLitentry,
   rococoPhala: nodePhala,
   rococoPlasm: nodePlasm,
   rococoPolkabtc: chainPolkaBTC,
