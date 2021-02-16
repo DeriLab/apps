@@ -7,9 +7,9 @@
   "maintainers": [],
   "contributors": [],
   "license": "Apache-2.0",
-  "repository": "github:polkadot-js/apps",
-  "bugs": "https://github.com/polkadot-js/apps/issues",
-  "homepage": "https://github.com/polkadot-js/apps/tree/master/packages/react-hooks#readme",
+  "repository": "github:derilab/apps",
+  "bugs": "https://github.com/derilab/apps/issues",
+  "homepage": "https://github.com/derilab/apps/tree/master/packages/react-hooks#readme",
   "dependencies": {
     "@babel/runtime": "^7.12.5"
   }
